@@ -22,29 +22,6 @@ This repository contains a **React-based website framework template** that serve
 ├── App.js
 ├── assets
 │   └── images
-│       ├── 1bg.jpg
-│       ├── background.jpg
-│       ├── background.png
-│       ├── icons
-│       │   ├── about-icon.svg
-│       │   ├── contact-icon.svg
-│       │   ├── dot-grid-icon.svg
-│       │   ├── facebook-icon.svg
-│       │   ├── favicon.ico
-│       │   ├── gear-icon.svg
-│       │   ├── home-icon.svg
-│       │   ├── instagram-icon.svg
-│       │   ├── x-icon.svg
-│       │   └── youtube-icon.svg
-│       ├── logo-desktop.png
-│       ├── logo-mobile.png
-│       ├── logo.png
-│       ├── slide1.png
-│       ├── slide2.png
-│       ├── slide3.png
-│       ├── slide4.png
-│       ├── slide5.png
-│       └── slide6.png
 ├── components
 │   ├── Footer
 │   │   ├── Footer.css
