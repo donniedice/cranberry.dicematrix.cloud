@@ -58,18 +58,6 @@ This repository contains a **React-based website framework template** that serve
 │   │       ├── SettingsMenu.css
 │   │       └── SettingsMenu.js
 │   └── unused-elements
-│       ├── Gallary
-│       │   ├── Gallary.css
-│       │   └── Gallary.js
-│       ├── HeaderActions.css
-│       ├── HeaderMobile.css
-│       ├── HeaderNav
-│       │   ├── HeaderNav.css
-│       │   └── HeaderNav.js
-│       ├── JoinButton
-│       │   ├── JoinButton.css
-│       │   └── JoinButton.js
-│       └── unused-HeaderLogo.css
 ├── i18n.js
 ├── index.css
 ├── index.js
