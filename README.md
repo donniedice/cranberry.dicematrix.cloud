@@ -129,10 +129,10 @@ This repository contains a **React-based website framework template** that serve
 
 ## Stylesheet Overview
 
-Below is a copy of the `src/index.css` file used in this project:
+Below is a copy of the `src/themes/defaultTheme.css` file used in this project:
 
 ```css
-/* File: src/index.css */
+/* File: src/themes/defaultTheme.css */
 
 /* ========================= */
 /* Default Theme Variables   */
