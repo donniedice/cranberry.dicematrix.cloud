@@ -1,0 +1,72 @@
+/* src/components/Header/Header.css */
+
+/* ========================= */
+/* Header Container          */
+/* ========================= */
+
+.header {
+  color: var(--HeaderTextColor, #1B3E68);  /* Default color for header text */
+  height: 390px;
+  width: 100%;
+  position: absolute; /* Position the header above the page */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--HeaderBackgroundColor, transparent); /* Background from theme */
+  transition: height 0.3s ease-in-out;
+  font-family: var(--HeaderFontFamily, var(--Roboto)); /* Header font */
+  font-size: var(--HeaderTextSize, 24px); /* Default font size */
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ========================= */
+/* Responsive Design         */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .header {
+    height: 340px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 260px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

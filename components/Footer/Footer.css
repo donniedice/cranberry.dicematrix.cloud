@@ -1,0 +1,91 @@
+.footer {
+  /* Pin to bottom center of the .App container */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* Styling */
+  background: var(--FooterBackgroundColor, transparent);
+  color: var(--FooterTextColor, #ffffff);
+  padding: 10px;
+  font-size: var(--FooterTextSize, 14px);
+  font-family: var(--FooterFontFamily, var(--Helvetica));
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Social Media Section */
+.footer-social-media {
+  margin-right: 15px;
+  color: var(--FooterSocialMediaTextColor, #ffffff); /* Social media section color */
+}
+
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  color: var(--FooterLinksTextColor, #ffffff); /* Links section color */
+}
+
+.footer-links a {
+  color: var(--FooterLinksTextColor, #ffffff); /* Default color for footer links */
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: var(--FooterTextSize, 14px); /* Font size controlled by theme */
+}
+
+/* Custom Styling for Privacy Policy, Terms of Use, and Terms of Service */
+.footer-links .privacy-policy {
+  color: var(--FooterPrivacyPolicyTextColor, #ffffff); /* Default color for privacy policy link */
+  font-size: var(--FooterPrivacyPolicyFontSize, 16px); /* Font size for privacy policy link */
+}
+
+.footer-links .terms-of-service {
+  color: var(--FooterTermsOfServiceTextColor, #ffffff); /* Default color for terms of service link */
+  font-size: var(--FooterTermsOfServiceFontSize, 16px); /* Font size for terms of service link */
+}
+
+.footer-links .terms-of-use {
+  color: var(--FooterTermsOfUseTextColor, #ffffff); /* Default color for terms of use link */
+  font-size: var(--FooterTermsOfUseFontSize, 16px); /* Font size for terms of use link */
+}
+
+/* Hover effects for links */
+.footer-links a:hover {
+  color: var(--FooterLinkHoverColor, #14538d); /* Default hover color for links */
+}
+
+.footer-links .privacy-policy:hover {
+  color: var(--FooterPrivacyPolicyHoverColor, #14538d); /* Hover color for privacy policy */
+}
+
+.footer-links .terms-of-service:hover {
+  color: var(--FooterTermsOfServiceHoverColor, #14538d); /* Hover color for terms of service */
+}
+
+.footer-links .terms-of-use:hover {
+  color: var(--FooterTermsOfUseHoverColor, #14538d); /* Hover color for terms of use */
+}
+
+/* Separator Styling */
+.separator {
+  margin: 0 5px;
+  color: var(--FooterSeparatorColor, #ffffff); /* Separator color */
+}
+
+/* Copyright Section */
+.footer-copyright {
+  color: var(--FooterCopyrightColor, #ffffff); /* Copyright section color */
+}
+
+.footer p {
+  margin: 0;
+}

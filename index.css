@@ -1,0 +1,25 @@
+/* src/index.css */
+
+/* Reset and Global Styles */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: var(--Roboto); /* Default font from theme (Roboto) */
+  overflow-x: hidden;
+}
+
+#root, .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}

@@ -1,0 +1,66 @@
+/* Settings Container */
+.settings-container {
+    position: fixed;
+    top: 11px;
+    right: 17px;
+    z-index: 1000;
+    background-color: var(--SettingsMenuContainerBackground, transparent);
+  }
+  
+  /* Flyout Button */
+  .settings-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--SettingsMenuButtonBackground, transparent);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    width: auto; /* Allow width to scale with text length */
+    min-width: 80px; /* Minimum width for pill shape */
+    max-width: 300px; /* Maximum width to prevent excessive stretching */
+    overflow: hidden;
+    position: relative;
+    justify-content: flex-end; /* Align items to the right side */
+  }
+  
+  .settings-button.hovered {
+    width: auto; /* Ensure the width adjusts to fit the text */
+    background-color: var(--SettingsMenuButtonHoverBackground, #4a4a4a);
+  }
+  
+  /* Gear Icon */
+  .settings-button .gear-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px; /* Space between icon and text */
+    flex-shrink: 0; /* Prevent shrinking of the gear icon */
+  }
+  
+  .settings-button .gear-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--SettingsMenuGearIconColor, #ffffff);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .settings-button.hovered .gear-icon svg {
+    transform: rotate(360deg);
+  }
+  
+  /* Flyout Text */
+  .settings-button .flyout-text {
+    color: var(--SettingsMenuFlyoutTextColor, #ffffff);
+    font-size: var(--SettingsMenuFlyoutTextSize, 14px);
+    font-family: var(--SettingsMenuFlyoutFontFamily, var(--Roboto));
+    white-space: nowrap;
+    opacity: 1;
+    margin-right: 10px; /* Space between text and icon */
+    transition: opacity 0.3s ease-in-out;
+    flex-grow: 1; /* Allow text to grow based on the available space */
+  }
+  

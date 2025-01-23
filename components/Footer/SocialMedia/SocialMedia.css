@@ -1,0 +1,57 @@
+/* src/components/Footer/SocialMedia/SocialMedia.css */
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+}
+
+.social-icon {
+  width: var(--SocialMediaIconSize, 24px); /* Default size from global styles */
+  height: var(--SocialMediaIconSize, 24px);
+  color: var(--SocialMediaIconColor, #ffffff); /* Default color (white) */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-icon svg {
+  fill: currentColor; /* Ensures the SVG fill inherits color from the parent */
+  width: 100%; /* Ensure SVG size is based on parent container */
+  height: 100%; /* Ensure SVG size is based on parent container */
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  transform: scale(var(--SocialMediaIconHoverScale, 1.1));
+  color: var(--SocialMediaIconHoverColor, #cccccc); /* Default hover color */
+}
+
+/* Custom color overrides for individual icons */
+.instagram-icon {
+  --SocialMediaIconColor: var(--InstagramIconColor); /* Instagram color */
+  --SocialMediaIconHoverColor: var(--InstagramIconHoverColor); /* Instagram hover color */
+}
+
+.facebook-icon {
+  --SocialMediaIconColor: var(--FacebookIconColor); /* Facebook color */
+  --SocialMediaIconHoverColor: var(--FacebookIconHoverColor); /* Facebook hover color */
+}
+
+.youtube-icon {
+  --SocialMediaIconColor: var(--YoutubeIconColor); /* YouTube color */
+  --SocialMediaIconHoverColor: var(--YoutubeIconHoverColor); /* YouTube hover color */
+}
+
+.x-icon {
+  --SocialMediaIconColor: var(--XIconColor); /* X (formerly Twitter) color */
+  --SocialMediaIconHoverColor: var(--XIconHoverColor); /* X hover color */
+}
+
+@media (max-width: 576px) {
+  .social-icon {
+    width: var(--SocialMediaIconSizeMobile, 20px);
+    height: var(--SocialMediaIconSizeMobile, 20px);
+  }
+}

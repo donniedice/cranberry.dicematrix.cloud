@@ -1,0 +1,68 @@
+/* ========================= */
+/* Gallery Container */
+/* ========================= */
+.gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Slide Container */
+  .slide-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide-wrapper {
+    display: flex;
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* ========================= */
+  /* Arrows */
+  /* ========================= */
+  .arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--white, #fff);
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .arrow-left {
+    left: 20px;
+  }
+  
+  .arrow-right {
+    right: 20px;
+  }
+  
+  .arrow-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  

@@ -1,0 +1,56 @@
+.language-selector {
+  font-size: var(--LanguageSelectorFontSize, 14px);
+  background-color: var(--LanguageSelectorContainerBackground, #f1f1f1); /* Background color for the container */
+  color: var(--LanguageSelectorTextColor, #1B3E68); /* Text color */
+  padding: 10px 15px; /* Reduced padding for a more compact look */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: fit-content; /* Adjust width to the dropdown width */
+}
+
+.language-selector p {
+  margin: 0 0 8px;
+  font-weight: bold;
+  color: var(--LanguageSelectorTitleColor, #1B3E68); /* Title color */
+}
+
+/* Language dropdown styling */
+.language-dropdown {
+  font-size: var(--LanguageSelectorButtonFontSize, 12px); /* Reduced font size */
+  color: var(--LanguageSelectorButtonColor, #1B3E68); /* Text color for options */
+  background-color: var(--LanguageSelectorButtonBackground, #ffffff); /* Background color for the dropdown */
+  border: 1px solid var(--LanguageSelectorButtonBorderColor, #ccc); /* Border color */
+  padding: 5px 8px; /* Reduced padding to make the dropdown less tall */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  width: 150px; /* Adjusted width for dropdown */
+}
+
+/* Focus state for dropdown */
+.language-dropdown:focus {
+  outline: none;
+  border-color: var(--LanguageSelectorButtonFocusBorderColor, #14538d);
+  color: var(--LanguageSelectorButtonFocusColor, #14538d);
+}
+
+/* Option colors inside the dropdown */
+.language-dropdown option {
+  color: var(--LanguageSelectorButtonOptionColor, #1B3E68);
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 576px) {
+  .language-selector {
+    font-size: var(--LanguageSelectorFontSizeMobile, 16px);
+    text-align: center;
+  }
+
+  .language-selector p {
+    font-size: var(--LanguageSelectorTitleFontSizeMobile, 18px);
+  }
+
+  .language-dropdown {
+    font-size: var(--LanguageSelectorButtonFontSizeMobile, 16px);
+  }
+}

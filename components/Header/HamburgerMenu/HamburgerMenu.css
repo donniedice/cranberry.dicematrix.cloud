@@ -1,0 +1,144 @@
+/* File: src/components/HamburgerMenu/HamburgerMenu.css */
+
+/* Main container holding the hamburger icon/button */
+.hamburger-menu-container {
+  position: fixed;
+  top: 15px;
+  left: 26px;
+  z-index: 1001;
+}
+
+/* Button styling */
+.hamburger-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--HamburgerMenuButtonSize, 36px);
+  height: var(--HamburgerMenuButtonSize, 36px);
+  background: var(--HamburgerMenuButtonBackground, transparent);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hamburger button hover */
+.hamburger-button:hover {
+  background-color: var(--HamburgerMenuButtonHoverBackground, #f1f1f1);
+  /* Optional: Change drop shadow on hover if desired */
+  /* box-shadow: 0 4px 6px var(--HamburgerMenuDropShadowHoverColor, #333333); */
+}
+
+/* Dots container */
+.dots-container {
+  width: var(--HamburgerMenuIconContainerSize, 36px);
+  height: var(--HamburgerMenuIconContainerSize, 36px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply mask and set background color based on CSS variables */
+.dot-grid-icon {
+  display: inline-block;
+  width: var(--HamburgerMenuIconSize, 24px);
+  height: var(--HamburgerMenuIconSize, 24px);
+  /* Apply the SVG as a mask */
+  mask: url('../../../assets/images/icons/dot-grid-icon.svg') no-repeat center / contain;
+  -webkit-mask: url('../../../assets/images/icons/dot-grid-icon.svg') no-repeat center / contain; /* For Safari */
+  background-color: var(--HamburgerMenuDotColor, #ffffff); /* Default dot color */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the dots */
+.hamburger-button:hover .dot-grid-icon {
+  background-color: var(--HamburgerMenuDotHoverColor, #555555); /* Hover dot color */
+}
+
+/* Dropdown container */
+.hamburger-menu-dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 300px;
+  background-color: var(--HamburgerMenuDropdownBackground, #2b2b2b);
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 1002;
+  color: var(--HamburgerMenuDropdownText, #ffffff);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--HamburgerMenuFontFamily, 'Roboto', sans-serif);
+  font-size: var(--HamburgerMenuFontSize, 14px);
+}
+
+/* Header/title area */
+.hamburger-menu-header {
+  padding: 10px 20px;
+  font-size: var(--HamburgerMenuHeaderFontSize, 16px);
+  border-bottom: 1px solid var(--HamburgerMenuDividerColor, #cccccc);
+}
+
+/* Menu content and items */
+.hamburger-menu-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.hamburger-menu-left-col,
+.hamburger-menu-right-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger-menu-item:hover {
+  background-color: var(--HamburgerMenuItemHoverBackground, #e0e0e0);
+  border-radius: 4px;
+}
+
+.hamburger-menu-item-icon {
+  width: var(--HamburgerMenuIconSize, 20px);
+  height: var(--HamburgerMenuIconSize, 20px);
+  margin-right: 8px;
+}
+
+/* Bottom link */
+.hamburger-menu-bottom-link {
+  border-top: 1px solid var(--HamburgerMenuDividerColor, #cccccc);
+  padding: 10px 20px;
+  margin-top: auto;
+}
+
+.bottom-link-text {
+  color: var(--HamburgerMenuBottomLinkColor, #00b7ff);
+  font-size: var(--HamburgerMenuBottomLinkFontSize, 14px);
+  text-decoration: none;
+}
+
+.bottom-link-text:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

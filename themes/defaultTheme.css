@@ -1,0 +1,131 @@
+/* File: src/index.css */
+
+/* ========================= */
+/* Default Theme Variables   */
+/* ========================= */
+
+:root {
+    /* ------------------------------------- */
+    /* Font Variables */
+    /* ------------------------------------- */
+    --Roboto: 'Roboto', sans-serif; /* Default font for body text */
+    --Arial: 'Arial', sans-serif; /* Font for headings */
+    --Helvetica: 'Helvetica', sans-serif; /* Font for buttons */
+  
+    /* ------------------------------------- */
+    /* Font for Specific Sections */
+    /* ------------------------------------- */
+    --font-body: var(--Roboto); /* Body font */
+  
+    /* Pages / Home */
+    --HomeExtraTextColor: #1b3e68; /* Dark blue text */
+    --HomeCardBackground: #ff0044; /* Vibrant red card background */
+    --HomeCardShadow: 0 4px 8px #0000001a; /* Subtle black shadow (10% opacity) */
+    --HomeCardTextColor: #000000; /* Black text color */    /* Pages / Home */
+    --HomeExtraTextColor: #1b3e68; /* Dark blue text */
+    --HomeCardBackground: #ff0044; /* Vibrant red card background */
+    --HomeCardShadow: 0 4px 8px #0000001a; /* Subtle black shadow (10% opacity) */
+    --HomeCardTextColor: #000000; /* Black text color */
+
+
+    /* ------------------------------------- */
+    /* Header Section Font */
+    /* ------------------------------------- */
+    --HeaderTextColor: #1b3e68; /* Dark blue text */
+    --HeaderBackgroundColor: transparent; /* Transparent background */
+    --HeaderFontFamily: var(--Arial); /* Header font family (Arial for headings) */
+    --HeaderTextSize: 24px; /* Header text size */
+    --HeaderFontSize: var(--HeaderTextSize); /* Added for easier reference */
+
+    /* Hamburger Menu Variables */
+    --HamburgerMenuButtonSize: 36px;
+    --HamburgerMenuButtonBackground: transparent;
+    --HamburgerMenuButtonHoverBackground: #f1f1f147;
+    --HamburgerMenuDotColor: #ffffff; /* Default dot color (white) */
+    --HamburgerMenuDotHoverColor: #ffffff; /* Hover dot color (gray) */
+    --HamburgerMenuIconContainerSize: 36px;
+    --HamburgerMenuIconSize: 24px;
+    --HamburgerMenuDropdownBackground: #2b2b2b;
+    --HamburgerMenuDropdownText: #ffffff;
+    --HamburgerMenuFontFamily: 'Roboto', sans-serif;
+    --HamburgerMenuFontSize: 14px;
+    --HamburgerMenuHeaderFontSize: 16px;
+    --HamburgerMenuDividerColor: #cccccc;
+    --HamburgerMenuItemHoverBackground: #e0e0e0;
+    --HamburgerMenuBottomLinkColor: #00b7ff;
+    --HamburgerMenuBottomLinkFontSize: 14px;
+  
+    /* ========================= */
+    /* Settings Menu Variables */
+    /* ========================= */
+    --SettingsMenuFontFamily: var(--Roboto);
+    --SettingsMenuFontSize: 14px;
+    --SettingsMenuFlyoutFontFamily: var(--Roboto);
+    --SettingsMenuFlyoutTextSize: 14px;
+  
+    /* Custom Colors for Settings Menu */
+    --SettingsMenuContainerBackground: transparent;
+    --SettingsMenuButtonBackground: transparent;
+    --SettingsMenuButtonHoverBackground: #5b5b5b;
+    --SettingsMenuFlyoutTextColor: #ffffff;
+    --SettingsMenuDropdownBackground: #4a4a4a;
+    --SettingsMenuDropdownTextColor: #ffffff;
+    --SettingsMenuDropdownShadowColor: rgba(0, 0, 0, 0.1);
+    --SettingsMenuGearIconColor: #ffffff;
+  
+    /* Background Color for Menu Items */
+    --SettingsMenuItemBackground: #333333; /* Dark background for menu items */
+    --SettingsMenuItemHoverBackground: #4a4a4a; /* Hover background color for items */
+    --SettingsMenuItemTextColor: #ffffff; /* Text color for menu items */
+    --SettingsMenuItemFontSize: 14px;
+  
+    /* Language Selector Customization */
+    --LanguageSelectorFontSize: 14px;
+    --LanguageSelectorTextColor: #ffffff;
+    --LanguageSelectorTitleColor: #ffffff;
+    --LanguageSelectorContainerBackground: #333333; /* Dark background for the selector container */
+    --LanguageSelectorButtonBackground: #5b5b5b; /* White background for the dropdown */
+    --LanguageSelectorButtonColor: #ffffff;
+    --LanguageSelectorButtonHoverColor: #ff0044;
+    --LanguageSelectorButtonFontSize: 14px;
+    --LanguageSelectorButtonFocusBorderColor: #ff0044;
+    --LanguageSelectorButtonFocusColor: #ff0044;
+    --LanguageSelectorButtonOptionColor: #ffffff;
+  
+    /* Mobile-specific overrides */
+    --LanguageSelectorFontSizeMobile: 16px;
+    --LanguageSelectorTitleFontSizeMobile: 18px;
+    --LanguageSelectorButtonFontSizeMobile: 16px;
+
+
+    /* ------------------------------------- */
+    /* Footer Section Font */
+    /* ------------------------------------- */
+    --FooterTextColor: #ffffff; /* White text */
+    --FooterFontFamily: var(--Helvetica); /* Footer font family */
+    --FooterTextSize: 10px; /* Footer text size */
+    
+      /* Social Media Icon Styles */
+    --SocialMediaIconSize: 10px; /* Default size for icons */
+    --SocialMediaIconHoverScale: 1.1; /* Hover scale effect */
+  
+    /* Custom Colors for Each Social Media Icon */
+    --InstagramIconColor: #ffffff; /* Instagram color */
+    --FacebookIconColor: #ffffff; /* Facebook color */
+    --YoutubeIconColor: #ffffff; /* YouTube color */
+    --XIconColor: #ffffff; /* X (formerly Twitter) color */
+  
+    /* Custom Hover Colors for Each Social Media Icon */
+    --InstagramIconHoverColor: #D35F7E; /* Instagram hover color */
+    --FacebookIconHoverColor: #4B8BFA; /* Facebook hover color */
+    --YoutubeIconHoverColor: #FF3333; /* YouTube hover color */
+    --XIconHoverColor: #1A8BCC; /* X hover color */
+    /* Footer Links Section */
+    --FooterLinksTextColor: #ffffff; /* White text for footer links */
+    --FooterLinkHoverColor: #00b7ff; /* Hover color for footer links */
+    --FooterSeparatorColor: #ffffff; /* Separator color */
+  
+    /* Footer Copyright Section */
+    --FooterCopyrightColor: #ffffff; /* White text for copyright */
+  }
+  

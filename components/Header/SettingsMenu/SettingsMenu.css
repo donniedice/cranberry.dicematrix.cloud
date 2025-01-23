@@ -1,0 +1,64 @@
+/* Ensure the menu container dynamically adjusts its height */
+.settings-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 250px; /* Fixed width */
+  padding: 15px;
+  background-color: var(--SettingsMenuDropdownBackground, #000000);
+  color: var(--SettingsMenuDropdownTextColor, #ffffff);
+  box-shadow: 0 4px 6px var(--SettingsMenuDropdownShadowColor, rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+  z-index: 1001;
+  font-family: var(--SettingsMenuFontFamily, var(--Roboto));
+  font-size: var(--SettingsMenuFontSize, 14px);
+
+  /* Layout adjustments */
+  display: flex; /* Use flexbox for vertical stacking */
+  flex-direction: column; /* Stack children in a column */
+  align-items: stretch; /* Stretch children to full width */
+  gap: 15px; /* Space between child elements */
+  height: auto; /* Dynamically adjust to content height */
+  box-sizing: border-box; /* Include padding in calculations */
+}
+
+/* Footer adjustments */
+.settings-menu .footer-settings-menu {
+  background-color: #222;
+  color: #ccc;
+  padding: 15px; /* Ensure proper internal spacing */
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+
+  /* Ensure it's part of the layout */
+  position: relative; /* Ensure it's included in layout calculation */
+  width: 100%; /* Ensure it stretches to match parent width */
+  box-sizing: border-box; /* Include padding in size */
+  margin: 0; /* Avoid collapsing margins */
+}
+
+/* Language Selector */
+.settings-menu .language-selector {
+  position: relative; /* Ensure it's included in layout */
+  width: 100%; /* Stretch to full parent width */
+}
+
+/* Close Button */
+.settings-menu .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: var(--SettingsMenuCloseBtnColor, #ffffff);
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+}
+
+.settings-menu .close-btn:hover {
+  color: var(--SettingsMenuCloseBtnHoverColor, #ff0000);
+}
